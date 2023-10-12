@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>동영상 | 카스카디아 (CASCADIA)</title>
+        <meta name="naver-site-verification" content="b9079ca95812a20de2d7e5b50890abd5e23b89b9" />
+        <meta name="keywords" content="당신의 낙원 카스카디아입니다. 골프클럽, 스위트, 빌라, 콘도" />
+        <meta name="description" content="당신의 낙원 카스카디아입니다. 골프클럽, 스위트, 빌라, 콘도" />
+        <meta name="google-site-verification" content="IAFqMKrFL_oI-6qEK5RLdIQIgLSI2Tm4BioBI8KstoA" />
+        <meta name="naver-site-verification" content="c92584d9c1fb2f16b436d9f4b31eb4b7f58903f4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="카스카디아 (CASCADIA)" />
+        <meta property="og:description" content="당신의 낙원 카스카디아입니다. 골프클럽, 스위트, 빌라, 콘도" />
+        <meta property="og:image" content="http://www.cascadia.kr/img/cascadia.jpg" />
+        <meta property="og:url" content="http://www.cascadia.kr/" />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="http://www.cascadia.kr/pc/movie.html" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?1" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Serif+KR:wght@200;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./static/pc/css/comm.css" />
+    </head>
+    <body style="overflow-y: hidden">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-TNHHS74"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="container-movie fullmovie">
+            <div class="wrapper-movie">
+                <iframe
+                    class="player"
+                    src="https://www.youtube.com/embed/xNgGK_h98R0?rel=0&autoplay=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <a href="./index.html" class="link-close"> Close <span class="burger"></span> </a>
+        </div>
+
+        <script src="./static/pc/js/jquery-1.12.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+        <script>
+            // 로딩
+            var customElement = $("<div>", {
+                class: "loading",
+                text: "Loading...",
+            });
+            $.LoadingOverlay("show", {
+                image: "",
+                background: "rgba(0,0,0,0.2)",
+                custom: customElement,
+            });
+            setTimeout(function () {
+                $.LoadingOverlay("hide");
+            }, 3000);
+        </script>
+    </body>
+</html>
