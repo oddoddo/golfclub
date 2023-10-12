@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "reset", "variables", "mixins";
+@import 'reset', 'variables', 'mixins';
 
 /* 공통 */
 
@@ -65,7 +65,7 @@ body.fixed {
             display: block;
             width: 282px;
             height: 36px;
-            background: url("../images/logo.svg") 0 0 no-repeat;
+            background: url('../images/logo.svg') 0 0 no-repeat;
             background-size: contain;
         }
     }
@@ -110,7 +110,7 @@ body.fixed {
             .bar,
             &::after,
             &::before {
-                content: "";
+                content: '';
                 width: 26px;
                 height: 1px;
                 display: block;
@@ -166,7 +166,7 @@ body.fixed {
     opacity: 0;
     transition: left 0.3s, opacity 0.3s;
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -309,7 +309,7 @@ body.fixed {
         padding-left: 20px;
         color: #efe2d3;
         &::before {
-            content: "";
+            content: '';
             position: absolute;
             top: 0;
             bottom: 0;
@@ -386,7 +386,7 @@ body.fixed {
     }
 
     &.video_type:before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         left: 0;
@@ -444,7 +444,7 @@ body.fixed {
     transform: scale(1.04);
 }
 
-[data-js="aos"] {
+[data-js='aos'] {
     margin-top: 10px;
     opacity: 0;
 }
@@ -628,7 +628,7 @@ body.fixed {
             font-size: 0.85em;
             font-family: $font-serif;
             &::before {
-                content: "";
+                content: '';
                 display: block;
                 position: absolute;
                 bottom: 0;
@@ -638,7 +638,7 @@ body.fixed {
                 background-color: $w;
             }
             &::after {
-                content: "";
+                content: '';
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -691,7 +691,7 @@ body.fixed {
     background-color: $prim;
     line-height: 1.7;
     &::before {
-        content: "";
+        content: '';
         display: block;
         float: left;
         width: 54%;
@@ -731,7 +731,7 @@ body.fixed {
                 line-height: 1.2;
                 letter-spacing: -0.045em;
                 &::before {
-                    content: "";
+                    content: '';
                     @include posY;
                     left: 0;
                     width: 20px;
@@ -745,7 +745,7 @@ body.fixed {
         position: relative;
         margin-top: 40px;
         &::before {
-            content: "";
+            content: '';
             display: inline-block;
             width: 43px;
             height: 1px;
@@ -775,7 +775,7 @@ body.fixed {
 
 /*wrap case*/
 
-.box_global_view.active .box_slide_item.swiper-slide-active [data-js="aos"] {
+.box_global_view.active .box_slide_item.swiper-slide-active [data-js='aos'] {
     opacity: 1;
     margin-top: 0;
     -webkit-transition: opacity 2s, margin 2s;
@@ -846,7 +846,7 @@ body.fixed {
         padding-right: 23px;
 
         &:before {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             right: 0;
@@ -872,7 +872,7 @@ body.fixed {
             padding-bottom: 3px;
 
             &:before {
-                content: "";
+                content: '';
                 display: none;
                 position: absolute;
                 right: 0;
@@ -921,7 +921,7 @@ body.fixed {
     ul {
         position: relative;
         &::before {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             right: 0;
@@ -951,7 +951,7 @@ body.fixed {
                 a {
                     font-size: 18px;
                     &::before {
-                        content: "";
+                        content: '';
                         display: block;
                         position: absolute;
                         top: -2px;
@@ -980,7 +980,7 @@ body.fixed {
             font-size: 14px;
 
             &:before {
-                content: "";
+                content: '';
                 display: none;
                 position: absolute;
                 right: 0;
@@ -1136,14 +1136,14 @@ body.fixed {
     background-color: $prim;
     transition: top 0.5s, opacity 0.5s;
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: -1;
-        background: url(../images/pc-slide0-4.png) 0 0 no-repeat;
+        background: url(../images/pc-slide0-4.jpg) 0 0 no-repeat;
         filter: blur(8px);
         -webkit-filter: blur(8px);
         opacity: 0.1;
@@ -1174,7 +1174,7 @@ body.fixed {
             margin-left: 30px;
             &::after,
             &::before {
-                content: "";
+                content: '';
                 width: 35px;
                 height: 1px;
                 display: block;
@@ -1224,12 +1224,12 @@ body.fixed {
     width: 100px;
     height: 100px;
     font-size: 13px;
-    font-family: "Noto Sans KR", "AppleGothic", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", sans-serif;
+    font-family: 'Noto Sans KR', 'AppleGothic', 'Malgun Gothic', '맑은 고딕', '돋음', 'Dotum', sans-serif;
     text-align: center;
     color: #fff;
 }
 .loading::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1262,12 +1262,12 @@ body.fixed {
     width: 100px;
     height: 100px;
     font-size: 13px;
-    font-family: "Noto Sans KR", "AppleGothic", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", sans-serif;
+    font-family: 'Noto Sans KR', 'AppleGothic', 'Malgun Gothic', '맑은 고딕', '돋음', 'Dotum', sans-serif;
     text-align: center;
     color: #fff;
 
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;

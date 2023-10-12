@@ -1489,7 +1489,7 @@ body.fixed {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: url(../images/pc-slide0-4.png) 0 0 no-repeat;
+  background: url(../images/pc-slide0-4.jpg) 0 0 no-repeat;
   filter: blur(8px);
   -webkit-filter: blur(8px);
   opacity: 0.1;
