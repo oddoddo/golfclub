@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Noto Sans KR", "AppleGothic", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-text-size-adjust: none;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+}
+@media screen and (min-width: 400px) {
+    html,
+    body {
+        font-size: 16px;
+    }
+}
+
+body {
+    height: 100%;
+    color: #000;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+address,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ol,
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    text-indent: -999em;
+}
+th,
+td {
+    word-break: break-all;
+}
+/* fieldset, iframe {width:100%;pointer-events: none;} */
+fieldset {
+    width: 100%;
+    pointer-events: none;
+}
+fieldset,
+img {
+    border: 0;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+button,
+select,
+input,
+textarea,
+label,
+img {
+    vertical-align: middle;
+}
+button {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+}
+button:disabled {
+    cursor: default;
+}
+button > span {
+    position: relative;
+}
+address,
+caption,
+em,
+strong,
+th {
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+a,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none; /*color:#000;*/
+}
+em,
+address {
+    font-style: normal;
+}
+input::-ms-clear {
+    display: none;
+}
+input[type="text"] {
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    font-family: "spoqa";
+    color: #000;
+    font-size: 14px;
+}
+input[type="text"],
+input[type="password"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #000;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999;
+}
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #000;
+    font-family: "spoqa";
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+textarea::placeholder {
+    color: #999;
+}
+
+/* hidden */
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.hide {
+    display: none;
+}
+.blind,
+caption,
+legend {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+// body {
+//     background: url(../../../m2.png) 50% 89% no-repeat;
+//     background-size: cover;
+// }
+// .scroll-container,
+// .container-movie {
+//     opacity: 0.5;
+// }
